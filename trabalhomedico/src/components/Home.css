@@ -1,0 +1,37 @@
+/* Home.css */
+
+/* Estilo para o contêiner principal da página Home */
+.HomeContainer {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Estilo para os botões de Login e Cadastro */
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    text-decoration: none;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilo para os links dentro dos botões */
+  button a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  

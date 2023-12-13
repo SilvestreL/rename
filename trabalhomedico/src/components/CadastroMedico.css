@@ -1,0 +1,65 @@
+/* CadastroMedico.css */
+
+/* Estilo para o contêiner principal do formulário de cadastro do médico */
+.CadastroMedico {
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para o título do formulário de cadastro do médico */
+  .h2CadastroMedico {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    color: #333;
+  }
+  
+  /* Estilo para o contêiner que envolve o label e o input */
+  .inputContainer {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente */
+  }
+  
+  /* Estilo para o label dentro do contêiner de input */
+  .inputContainer label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    justify-content: left;
+    text-align: center; /* Centraliza o texto do label */
+  }
+  
+  /* Estilo para o input dentro do contêiner de input */
+  .inputCadastroMedico {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  
+  /* Estilo para o contêiner que envolve os checkboxes */
+  .divCadastroMedico {
+    margin: 0 auto; /* Centraliza os checkboxes horizontalmente */
+  }
+  
+  /* Estilo para o contêiner que envolve os checkboxes */
+  .checkboxContainer {
+    margin-bottom: 16px;
+  }
+  
+  /* Estilo para o label dos checkboxes */
+  .checkboxContainer label {
+    margin-left: 8px;
+  }
+  
+  /* Estilo para o contêiner que envolve os botões */
+  .buttonsCadastroMedico {
+    display: flex;
+    flex-direction: column;
+  }
+  
