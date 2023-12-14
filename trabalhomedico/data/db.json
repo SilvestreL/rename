@@ -29,6 +29,18 @@
       "email": "marcio@marcio",
       "password": "123",
       "id": 14
+    },
+    {
+      "nome": "usuario de teste ",
+      "email": "usario@usuario",
+      "password": "123",
+      "id": 15
+    },
+    {
+      "nome": "usuario de teste",
+      "email": "usuario@usuario",
+      "password": "123",
+      "id": 16
     }
   ],
   "medicos": [
@@ -49,6 +61,22 @@
       "nomeMedico": "",
       "diasAtendimento": [],
       "id": 2
+    },
+    {
+      "nomeMedico": "Medico De Teste",
+      "diasAtendimento": [
+        0,
+        1,
+        2
+      ],
+      "id": 3
+    },
+    {
+      "nomeMedico": "Teste 2",
+      "diasAtendimento": [
+        0
+      ],
+      "id": 4
     }
   ],
   "consultas": [
@@ -58,6 +86,13 @@
       "medico": "lucas silvestre messias",
       "nome": "ruan riquelme",
       "id": 5
+    },
+    {
+      "diaSemana": "1",
+      "medicoID": "3",
+      "medico": "Medico De Teste",
+      "nome": "Paciente de teste",
+      "id": 6
     }
   ]
 }

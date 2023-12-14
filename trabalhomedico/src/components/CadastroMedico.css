@@ -44,12 +44,12 @@
   
   /* Estilo para o contêiner que envolve os checkboxes */
   .divCadastroMedico {
-    margin: 0 auto; /* Centraliza os checkboxes horizontalmente */
+    margin: auto; /* Centraliza os checkboxes horizontalmente */
   }
   
   /* Estilo para o contêiner que envolve os checkboxes */
   .checkboxContainer {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
   
   /* Estilo para o label dos checkboxes */
