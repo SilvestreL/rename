@@ -1,4 +1,5 @@
 {
+  "homepage": "https://silvestrel.github.io/clinicamedica/",
   "name": "trabalhomedico",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "server": "json-server --watch data/db.json",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "preact": "^10.19.1",
@@ -15,6 +18,7 @@
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.6.0",
+    "gh-pages": "^6.1.0",
     "vite": "^5.0.0"
   }
 }
