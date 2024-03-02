@@ -77,6 +77,18 @@
         0
       ],
       "id": 4
+    },
+    {
+      "nomeMedico": "Rafha",
+      "diasAtendimento": [
+        0
+      ],
+      "id": 5
+    },
+    {
+      "nomeMedico": "",
+      "diasAtendimento": [],
+      "id": 6
     }
   ],
   "consultas": [
@@ -93,6 +105,13 @@
       "medico": "Medico De Teste",
       "nome": "Paciente de teste",
       "id": 6
+    },
+    {
+      "diaSemana": "1",
+      "medicoID": "1",
+      "medico": "lucas silvestre messias",
+      "nome": "ffssd",
+      "id": 7
     }
   ]
 }
