@@ -1,51 +1,30 @@
-name: Deploy
-
+name: Build and Deploy
 on:
   push:
     branches:
-      - main
-
+      - main  # Define em quais branches esse workflow será executado
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-
+  build-and-deploy:
+    runs-on: ubuntu-latest  # Define o tipo de runner que executará os jobs
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2  # Checa o código fonte do repositório
 
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
-          node-version: 16
+          node-version: '14'  # Define a versão do Node.js
 
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+      - name: Install Dependencies
+        run: npm install
 
-      - name: Build project
+      - name: Build
         run: npm run build
-
-      - name: Upload production-ready build files
-        uses: actions/upload-artifact@v2
-        with:
-          name: production-files
-          path: ./dist
-
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: production-files
-          path: ./dist
+        env:
+          CI: true
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          branch: gh-pages  # O branch para onde o conteúdo da build será enviado
+          folder: dist  # O diretório que contém os arquivos a serem deployados
+          clean: true  # Limpa arquivos antigos no branch de deploy
