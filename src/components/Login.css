@@ -1,0 +1,51 @@
+/* login.css */
+
+/* Estilo para o contêiner principal da página de login */
+.LoginContainer {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para o campo de entrada de e-mail */
+  .botaoLogin {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para o campo de entrada de senha */
+  .botaoPassword {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para o botão de entrada */
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilo para a mensagem de erro de senha inválida */
+  #invalidPasswordErrorMessage {
+    display: none;
+    color: red;
+    margin-top: 10px;
+  }
+  
